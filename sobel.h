@@ -10,6 +10,8 @@ extern int num_threads;
 extern int Kx[3][3];
 extern int Ky[3][3];
 
-// Thread function argument - TODO
-
-// Function declarations - TODO
+int loadFile(char*);
+void freeAll(unsigned char**);
+void threadWork(void*);
+void allocateOutput();
+unsigned char* convertTo1D(unsigned char**);
